@@ -2,8 +2,9 @@
 module.exports = {
   content: ["./src/**/*.{html,vue,js,ts,jsx,tsx}"],
   theme: {
-    color: {
-      "primary": '#5B5E64',
+    colors: {
+      primary: "#2F3720",
+      secondary: "#424739",
     },
     extend: {},
   },
