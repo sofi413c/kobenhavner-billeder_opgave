@@ -1,12 +1,13 @@
-import "./style.css";
+//referencer
+// const root = document.documentElement; svarer til det samme som den nederunder html
+const root = document.querySelector("html");
+const btn = document.querySelector("#toggle-btn");
 
-const btn = document.querySelector("button");
-const heading = document.querySelector("h1");
-
-function klikket() {
-  heading.classList.toggle("min-klasse");
-  document.documentElement.classList.add("dark");
-  document.documentElement.classList.remove("dark");
+//toggle funktionalitet
+function toggleTheme() {
+  root.classList.toggle("dark"); //hiver fat i html root referencen
 }
 
-btn.addEventListener("click", klikket);
+btn.addEventListener("click", toggleTheme);
+
+

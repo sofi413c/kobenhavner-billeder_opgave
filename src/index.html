@@ -9,9 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Alatsi&display=swap" rel="stylesheet" />
   </head>
-  <body class="sm:mx-10 lg:mx-24">
+  <header>
+    <button id="toggle-btn" class="mt-4 rounded-full bg-third px-5 py-2 border-2 border-black">Toggle</button>
+  </header>
+  <body class="bg-third dark:bg-black sm:mx-10 lg:mx-24">
     <main>
-      <button id="toggle-darkmode">Toggle</button>
       <section class="display grid lg:grid-cols-2">
         <h2 class="mt-10 text-4xl lg:text-7xl">Københavnerbilleder</h2>
         <h3 class="text-2xl lg:col-start-1">En guide til hipster foto</h3>
@@ -93,12 +95,11 @@
         </div>
       </section>
 
-      <section class="lg:grid lg:grid-cols-4 lg:grid-rows-2 gap-5">
-        <img class="lg:col-span-2 lg:row-span-2 my-4" src="billeder_fra_bogen/image_1.webp" alt="billede" />
+      <section class="gap-5 lg:grid lg:grid-cols-4 lg:grid-rows-2">
+        <img class="my-4 lg:col-span-2 lg:row-span-2" src="billeder_fra_bogen/image_1.webp" alt="billede" />
         <img class="my-4" src="billeder_fra_bogen/image_2.webp" alt="billede" />
         <img class="my-4" src="billeder_fra_bogen/image_3.webp" alt="billede" />
-        <img class="lg:col-span-2 my-4 max-w-xl " src="billeder_fra_bogen/image_4.webp" alt="billede" />
-        
+        <img class="my-4 max-w-xl lg:col-span-2" src="billeder_fra_bogen/image_4.webp" alt="billede" />
       </section>
 
       <section class="gap-16 bg-secondary px-8 py-2 lg:grid lg:grid-cols-2">
@@ -118,7 +119,6 @@
         <button class="rounded-full bg-red-700 p-4 px-11 text-xl text-white">Køb nu</button>
       </section>
     </main>
-
     <div class="mt-20 mb-10 bg-slate-600 pt-0.5"></div>
     <footer class="display text-center">
       <h2>Kontakt</h2>
@@ -139,5 +139,6 @@
       <p class="mt-10 mb-4">&copy; copyright all rights reserved 2023</p>
     </footer>
     <script type="module" src="./main.js"></script>
+    <script src="./darkmode.js"></script>
   </body>
 </html>
