@@ -10,9 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Alatsi&display=swap" rel="stylesheet" />
   </head>
   <header>
-    <button id="toggle-btn" class="mt-4 rounded-full bg-third px-5 py-2 border-2 border-black">Toggle</button>
+    <button id="toggle-btn" class="mt-4 rounded-full border-2 border-black bg-third px-5 py-2">Toggle</button>
   </header>
-  <body class="bg-third dark:bg-black mx-6 lg:mx-24">
+  <body class="mx-6 bg-third dark:bg-black lg:mx-24">
     <main>
       <section class="display grid lg:grid-cols-2">
         <h2 class="mt-10 text-4xl lg:text-7xl">Københavnerbilleder</h2>
@@ -33,7 +33,7 @@
         <img class="cols-2" src="bogen/kobenhavnerbilleder_oppefra.webp" alt="" />
       </section>
 
-      <section class="bg-primary my-6 mb-14">
+      <section class="my-6 mb-14 bg-primary">
         <h3 class="ml-9 pt-6 text-white">Anmeldelser af bogen</h3>
         <div class="gap-4 p-8 lg:flex">
           <div class="mb-6 bg-white p-8 lg:w-7/12">
@@ -95,28 +95,34 @@
         </div>
       </section>
 
-      <section class="gap-5 lg:grid lg:grid-cols-4 lg:grid-rows-2 my-16">
+      <section class="my-16 gap-5 lg:grid lg:grid-cols-4 lg:grid-rows-2">
         <img class="my-4 lg:col-span-2 lg:row-span-2 lg:my-0" src="billeder_fra_bogen/image_1.webp" alt="billede" />
         <img class="my-4 lg:my-0" src="billeder_fra_bogen/image_2.webp" alt="billede" />
         <img class="my-4 lg:my-0" src="billeder_fra_bogen/image_3.webp" alt="billede" />
-        <img class="my-4 lg:my-0 max-w-xxl lg:col-span-2" src="billeder_fra_bogen/image_4.webp" alt="billede" />
+        <img class="max-w-xxl my-4 lg:col-span-2 lg:my-0" src="billeder_fra_bogen/image_4.webp" alt="billede" />
       </section>
 
-      <section class="gap-16 bg-secondary px-8 py-2 lg:grid lg:grid-cols-2">
+      <section class="gap-16 bg-secondary px-8 py-2 lg:grid lg:grid-cols-2 mb-16">
         <div>
-          <h3 class="mt-10 text-white">Forfatteren</h3>
-          <p class="text-white">Sten Simons har en lang foto-karriere bag sig. Det hele startede i 00’erne, da han gik rundt i Pisserenden for at fotografere ungdommens forfald. Det ledte til en række udstillinger, og blev senere til hans først fotobog “Ungdomsdruk - pinlige billeder fra nattelivet.” Derefter tog karrieren fart: Han blev fotojournalist og dokumenterede en masse dagligdagsstof fra Amager på dagbladet “Amagerkaneren.” Sideløbende begyndte han at undervise i foto, og har skrevet et utal af bøger, herunder bestsellerne Scener fra S-toget, Brun mad - en visuel odysse, og lærebogen Fotografering for evnesvage.</p>
+          <h3 class="mt-10 mb-2 text-white">Forfatteren</h3>
+          <p class="leading-8 text-white">
+            Sten Simons har en lang foto-karriere bag sig.<br />
+            Det hele startede i 00’erne, da han gik rundt i Pisserenden for at fotografere ungdommens forfald. Det ledte til en række udstillinger, og blev senere til hans først fotobog “Ungdomsdruk - pinlige billeder fra nattelivet.” <br />
+            Derefter tog karrieren fart: Han blev fotojournalist og dokumenterede en masse dagligdagsstof fra Amager på dagbladet “Amagerkaneren.” Sideløbende begyndte han at undervise i foto, og har skrevet et utal af bøger, herunder bestsellerne Scener fra S-toget, Brun mad - en visuel odysse, og lærebogen Fotografering for evnesvage.
+          </p>
         </div>
         <img class="my-5" src="bogen/sten_simons.webp" alt="billede_af_forfatteren" />
       </section>
 
-      <section>
-        <h3 class="mt-16">Køb bogen før din nabo</h3>
-        <h3 class="text-xl">og få fri fragt på din ordre</h3>
-        <div class="flex gap-4">
-          <img class="my-6 lg:max-w-sm" src="bogen/kobenhavnerbilleder_aaben_venstre.webp" alt="" />
+      <section class="lg:grid lg:grid-cols-2">
+        <div>
+          <h3>Køb bogen før din nabo</h3>
+          <h3 class="text-xl">og få fri fragt på din ordre</h3>
+          <button class="rounded-full bg-red-700 p-4 px-11 text-xl text-white my-6">Køb nu</button>
         </div>
-        <button class="rounded-full bg-red-700 p-4 px-11 text-xl text-white">Køb nu</button>
+        <div class="flex gap-4">
+          <img class="mt-10 lg:max-w-sm" src="bogen/kobenhavnerbilleder_aaben_venstre.webp" alt="" />
+        </div>
       </section>
     </main>
     <div class="mt-20 mb-10 bg-slate-600 pt-0.5"></div>
@@ -139,6 +145,5 @@
       <p class="mt-10 mb-4">&copy; copyright all rights reserved 2023</p>
     </footer>
     <script type="module" src="./main.js"></script>
-
   </body>
 </html>
